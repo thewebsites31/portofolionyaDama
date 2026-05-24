@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Relevansi Topik — Etika Budaya</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="theme.css" />
+  <style>
+    .pill{
+      display:inline-block;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 7px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(0,0,0,0.12);
+      background: rgba(255,255,255,0.65);
+      margin: 6px 8px 0 0;
+    }
+
+    .detail-layout{
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 18px;
+      align-items: start;
+      margin-top: 10px;
+    }
+    .detail-toc{
+      position: sticky;
+      top: 90px;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.7);
+    }
+    .detail-toc .toc-head{
+      padding: 14px 14px 12px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      background:
+        radial-gradient(ellipse at 10% 30%, color-mix(in srgb, var(--page-accent) 22%, transparent) 0%, transparent 65%),
+        linear-gradient(180deg, rgba(26,26,46,0.04), transparent 75%);
+    }
+    .detail-toc .toc-title{
+      font-family: "Syne", sans-serif;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin: 0;
+      color: var(--dark);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+    .detail-toc a{
+      display: block;
+      padding: 10px 14px;
+      text-decoration: none;
+      font-size: 11px;
+      letter-spacing: 0.4px;
+      color: rgba(26,26,46,0.8);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      transition: background .15s ease, transform .15s ease;
+    }
+    .detail-toc a:hover{
+      background: rgba(0,0,0,0.03);
+      transform: translateX(2px);
+    }
+    .detail-toc a:last-child{ border-bottom: 0; }
+    .detail-toc .toc-foot{
+      padding: 12px 14px;
+      color: rgba(44,44,62,0.65);
+      font-size: 11px;
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .detail-section{
+      padding: 18px 18px 2px;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 12px;
+      background: #fff;
+      margin-bottom: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+    .detail-section::before{
+      content:"";
+      position:absolute;
+      inset: 0 auto 0 0;
+      width: 6px;
+      background: var(--page-accent);
+      opacity: 0.85;
+    }
+    .detail-section h4{
+      margin: 0 0 10px;
+      font-family: "Syne", sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      color: var(--dark);
+      font-size: 14px;
+    }
+    .detail-section p{
+      margin: 0 0 14px;
+      color: rgba(44,44,62,0.78);
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    .anchor{ scroll-margin-top: 90px; }
+
+    @media (max-width: 900px){
+      .detail-layout{ grid-template-columns: 1fr; }
+      .detail-toc{ position: relative; top: auto; }
+    }
+  </style>
+</head>
+<body class="accent-purple">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-title">Portofolio</span>
+        <span class="brand-sub">Etika Budaya</span>
+      </a>
+      <nav class="nav">
+        <a href="profile.html">Penulis</a>
+        <a href="mata-kuliah.html">Etika Budaya</a>
+        <a href="materi.html">Pembahasan Materi</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="kicker">04 — Relevansi</p>
+      <h1 class="title">Relevansi <em>Topik</em></h1>
+      <p class="subtitle">
+        Relevansi topik <strong>“Ekspektasi vs Realita Pengalaman Memesan Pizza Online di Era Digital”</strong> dengan mata kuliah
+        <strong>Etika Budaya</strong>.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="index.html">← Kembali ke Beranda</a>
+        <a class="btn btn-ghost" href="materi.html">Lihat Pembahasan Materi →</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="content">
+    <div class="grid">
+      <article class="card">
+        <h3>Gambaran Umum Relevansi</h3>
+        <p>
+          Topik ini sangat relevan dengan Etika Budaya karena ia berada di titik pertemuan antara nilai moral, perilaku konsumsi,
+          budaya digital, dan tanggung jawab sosial dalam bisnis. Dalam era digital, tindakan memesan makanan tidak lagi sekadar
+          aktivitas ekonomi sederhana, melainkan bagian dari budaya hidup modern yang dibentuk oleh kecepatan, visualisasi,
+          kemudahan akses, serta interaksi tidak langsung antara penjual dan pembeli.
+        </p>
+        <p>
+          Proposal dan laporan yang dibuat menunjukkan bahwa pembelian pizza online bukan hanya persoalan transaksi, tetapi juga
+          persoalan harapan yang dibangun melalui promosi, pengalaman nyata saat produk diterima, dan penilaian etis terhadap kesesuaian keduanya.
+          Laporan bahkan secara eksplisit menempatkan kepuasan sebagai hasil dari perbandingan antara ekspektasi prapembelian dan kinerja aktual produk,
+          sehingga topik ini secara langsung menyentuh inti pembahasan etika budaya: bagaimana manusia menilai tindakan, menuntut kejujuran,
+          dan membentuk standar kepantasan dalam kehidupan sosial modern.
+        </p>
+      </article>
+
+      <article class="card span-6">
+        <h3>Peta Kata Kunci</h3>
+        <p>
+          <span class="pill">Nilai moral</span>
+          <span class="pill">Budaya digital</span>
+          <span class="pill">Perilaku konsumsi</span>
+          <span class="pill">Kepuasan konsumen</span>
+          <span class="pill">Kejujuran</span>
+          <span class="pill">Tanggung jawab sosial</span>
+          <span class="pill">Utilitarianisme</span>
+          <span class="pill">Deontologi</span>
+          <span class="pill">Keadilan layanan</span>
+        </p>
+        <p>
+          Kata kunci di atas menjadi “kompas” untuk membaca proposal dan laporan, sekaligus untuk menilai praktik bisnis digital
+          secara etis dan kontekstual.
+        </p>
+      </article>
+
+      <article class="card span-6">
+        <h3>Kenapa Kasus Ini “Kena” di Etika Budaya?</h3>
+        <p>
+          Karena dalam layanan pesan antar makanan, konsumen sebenarnya membeli <strong>janji</strong> yang dibentuk lewat foto,
+          rating, ulasan, promo, dan estimasi waktu. Ketika realita tidak sesuai, yang terganggu bukan sekadar rasa puas,
+          tetapi juga <strong>kepercayaan</strong>, <strong>rasa adil</strong>, dan <strong>rasa dihormati</strong>.
+        </p>
+        <p>
+          Dari sini, pembahasan Etika Budaya menjadi konkret: kita dapat menilai apakah praktik bisnis digital selaras
+          dengan norma moral tentang kejujuran, konsistensi, tanggung jawab, serta dampaknya bagi kehidupan sosial modern.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3 class="anchor" id="detail-relevansi">Detail Relevansi (Versi Lengkap)</h3>
+
+        <div class="detail-layout">
+          <aside class="detail-toc" aria-label="Daftar isi detail relevansi">
+            <div class="toc-head">
+              <p class="toc-title">Daftar Isi</p>
+            </div>
+            <a href="#bagian1">1. Ekspektasi & realita (etika)</a>
+            <a href="#bagian2">2. Kenapa pizza online tepat</a>
+            <a href="#bagian3">3. Kepuasan sebagai jembatan</a>
+            <a href="#bagian4">4. Utilitarianisme</a>
+            <a href="#bagian5">5. Deontologi</a>
+            <a href="#bagian6">6. Budaya digital & ekspektasi</a>
+            <a href="#bagian7">7. Kekecewaan etis</a>
+            <a href="#bagian8">8. Nilai akademik</a>
+            <a href="#bagian9">9. Kesimpulan koneksi</a>
+            <div class="toc-foot">Scroll untuk membaca per bagian.</div>
+          </aside>
+
+          <div>
+            <section class="detail-section anchor" id="bagian1">
+              <h4>1. Ekspektasi dan realita sebagai fenomena etika, bukan hanya fenomena pemasaran</h4>
+              <p>
+                Dalam kerangka etika budaya, ekspektasi dan realita tidak bisa dipahami hanya sebagai dua keadaan psikologis yang berbeda.
+                Keduanya adalah dua kutub dari satu proses penilaian moral. Konsumen membentuk ekspektasi bukan dari ruang kosong,
+                melainkan dari budaya digital yang menekankan gambar menarik, rating, ulasan, promo, dan janji kecepatan.
+                Karena itu, ketika realita yang diterima tidak sesuai, yang terganggu bukan hanya kepuasan emosional, tetapi juga rasa kepercayaan,
+                rasa adil, dan rasa dihormati sebagai subjek yang berhak atas informasi benar.
+              </p>
+              <p>
+                Laporan menegaskan bahwa keterlambatan pengiriman, penurunan kualitas produk saat transit, dan diskrepansi visual antara materi promosi
+                dan wujud asli produk adalah pemicu utama ketidakpuasan konsumen. Artinya, “realita” bukan hanya barang yang sampai,
+                tetapi juga bukti apakah janji bisnis benar-benar ditepati. Di sini letak relevansi etika budaya: penelitian ini menilai sejauh mana
+                praktik bisnis digital selaras dengan norma moral tentang kejujuran, konsistensi, dan tanggung jawab.
+              </p>
+            </section>
+
+            <section class="detail-section anchor" id="bagian2">
+              <h4>2. Mengapa pizza online menjadi objek yang sangat tepat untuk dibahas dalam etika budaya</h4>
+              <p>
+                Pizza online adalah objek penelitian yang sangat kuat karena ia mengandung banyak unsur yang mudah menunjukkan ketegangan
+                antara harapan dan kenyataan. Pizza sensitif terhadap suhu, tekstur, tampilan, dan waktu pengantaran.
+                Saat konsumen membeli secara online, mereka tidak membeli barang yang bisa diperiksa langsung; mereka membeli gambaran, janji,
+                dan bayangan kualitas yang ditampilkan di layar. Begitu pesanan datang terlambat, dingin, rusak bentuknya, atau tidak sesuai foto,
+                maka yang muncul adalah pengalaman etis: konsumen merasa diperlakukan tidak sepenuhnya jujur.
+              </p>
+              <p>
+                Laporan menjelaskan bahwa pizza menjadi parameter ideal untuk mengukur sejauh mana platform digital mampu menjembatani gap
+                antara ekspektasi konsumen dengan realitas produk, karena kompleksitas variabel kualitasnya memang tinggi. Inilah alasan akademik
+                mengapa topik ini cocok untuk mata kuliah Etika Budaya: kasus pizza online memperlihatkan secara konkret bagaimana budaya digital
+                mengubah standar kepantasan dalam transaksi, dan bagaimana moralitas bisnis diuji di ruang yang serba cepat, visual, dan penuh persaingan.
+              </p>
+            </section>
+
+            <section class="detail-section anchor" id="bagian3">
+              <h4>3. Dimensi kepuasan konsumen sebagai jembatan antara psikologi, budaya, dan moralitas</h4>
+              <p>
+                Konsep kepuasan konsumen penting karena ia berfungsi sebagai jembatan antara pengalaman subjektif dan penilaian etis.
+                Kepuasan tidak dipahami sebagai perasaan sesaat, melainkan sebagai hasil evaluasi antara harapan awal dan kinerja aktual.
+                Itu berarti, saat seseorang merasa puas atau kecewa, yang sedang terjadi bukan sekadar reaksi emosional, tetapi juga proses
+                membandingkan janji dengan kenyataan.
+              </p>
+              <p>
+                Dalam konteks etika budaya, proses ini menunjukkan bahwa konsumen modern bukan penerima pasif; mereka adalah penilai aktif yang membentuk
+                standar moral terhadap layanan. Tiga pilar kepuasan—kualitas produk, kualitas layanan, dan harga/value for money—bukan sekadar variabel bisnis,
+                tetapi juga kategori etis: kualitas produk menyangkut hadirnya janji, kualitas layanan menyangkut penghormatan waktu dan kenyamanan pelanggan,
+                dan harga menyangkut rasa adil dalam pertukaran. Jadi, penelitian ini memetakan bagaimana masyarakat menilai apakah sebuah layanan layak dianggap baik,
+                pantas, dan bertanggung jawab dalam budaya digital.
+              </p>
+            </section>
+
+            <section class="detail-section anchor" id="bagian4">
+              <h4>4. Utilitarianisme sebagai dasar pembacaan manfaat kolektif</h4>
+              <p>
+                Utilitarianisme dipakai untuk menilai bahwa bisnis yang baik adalah bisnis yang menghasilkan manfaat sebesar-besarnya bagi jumlah orang terbanyak.
+                Relevansinya dengan topik ini kuat karena layanan pesan antar makanan dibangun atas logika kemanfaatan massal: cepat, praktis, efisien,
+                dan tidak perlu keluar rumah. Jika mayoritas konsumen merasa puas, maka secara utilitarian sistem tersebut dapat dianggap memberi kebaikan sosial.
+              </p>
+              <p>
+                Namun, utilitarianisme juga menuntut agar manfaat itu tidak dibangun di atas pengorbanan diam-diam dari konsumen yang kecewa.
+                Kebaikan yang dirasakan mayoritas tidak boleh menutupi kerugian yang dialami minoritas. Di sinilah penelitian menjadi sangat etis:
+                ia tidak sekadar mengatakan “banyak yang puas”, tetapi menguji apakah sistem layanan benar-benar menghasilkan kebaikan kolektif yang adil dan berkelanjutan.
+              </p>
+            </section>
+
+            <section class="detail-section anchor" id="bagian5">
+              <h4>5. Deontologi sebagai dasar kewajiban moral perusahaan</h4>
+              <p>
+                Deontologi relevan karena menilai bukan hanya hasil akhir, tetapi juga kewajiban moral yang melekat pada proses bisnis.
+                Dalam etika deontologis, tindakan yang benar harus dijalankan karena memang itu adalah kewajiban, bukan semata-mata demi keuntungan.
+                Ini cocok untuk topik pizza online, sebab pelaku usaha memiliki kewajiban moral untuk menyampaikan informasi yang jujur, foto yang akurat,
+                deskripsi yang tidak menyesatkan, dan estimasi pengiriman yang realistis.
+              </p>
+              <p>
+                Ketidaksesuaian visual atau keterlambatan kronis dapat dibaca sebagai pelanggaran etika prinsipil, terlepas dari ada atau tidaknya komplain resmi.
+                Ini penting karena di ruang digital ketidakjujuran sering dibungkus sebagai “strategi pemasaran”. Padahal, dari sudut pandang moral,
+                strategi tidak boleh menghapus kewajiban untuk berkata benar. Dengan demikian, topik ini menjadi contoh konkret bahwa dalam budaya konsumsi digital,
+                kejujuran bukan sekadar nilai tambahan, melainkan fondasi hubungan sosial antara penjual dan pembeli.
+              </p>
+            </section>
+
+            <section class="detail-section anchor" id="bagian6">
+              <h4>6. Budaya digital dan pembentukan ekspektasi konsumen</h4>
+              <p>
+                Ekspektasi konsumen tidak lahir secara alami, tetapi dibentuk oleh budaya digital itu sendiri. Di aplikasi pemesanan makanan,
+                konsumen terus-menerus dipengaruhi oleh foto produk, diskon, rating, ulasan, kecepatan aplikasi, dan kemudahan navigasi.
+                Akibatnya, ekspektasi menjadi sangat tinggi sekaligus sangat spesifik.
+              </p>
+              <p>
+                Budaya digital membentuk perilaku konsumsi yang sangat visual, cepat, dan sensitif terhadap nilai ekonomis. Dalam konteks etika budaya,
+                hal ini penting karena budaya digital tidak hanya mengubah cara membeli, tetapi juga mengubah cara masyarakat menilai kebenaran, kualitas,
+                dan kepantasan. Ketika konsumen merasa bahwa foto terlalu “estetik” tetapi tidak representatif, masalah yang muncul bukan hanya estetika,
+                melainkan masalah moral tentang kejujuran representasi.
+              </p>
+            </section>
+
+            <section class="detail-section anchor" id="bagian7">
+              <h4>7. Ketidaksesuaian ekspektasi dan realita sebagai sumber kekecewaan etis</h4>
+              <p>
+                Ketika ekspektasi tidak bertemu realita, yang muncul bukan hanya rasa kecewa, tetapi juga keretakan dalam hubungan etis antara konsumen
+                dan penyedia layanan. Ketidakpuasan bukan akhir dari pengalaman, melainkan awal dari konsekuensi sosial dan reputasional:
+                komplain, berhenti membeli, atau memberi ulasan negatif.
+              </p>
+              <p>
+                Dalam etika budaya, tindakan konsumen setelah kecewa adalah bentuk penilaian moral terhadap layanan yang diterima.
+                Saat pelanggan memutuskan berhenti membeli, itu bukan hanya keputusan ekonomis, tetapi pernyataan bahwa hubungan kepercayaan telah terganggu.
+                Saat memberi ulasan negatif, pengalaman pribadi berubah menjadi penilaian sosial yang memengaruhi citra publik perusahaan.
+                Artinya, kegagalan memenuhi janji bukan hanya merugikan individu, tetapi juga menggerus kepercayaan kolektif dalam ekosistem bisnis digital.
+              </p>
+            </section>
+
+            <section class="detail-section anchor" id="bagian8">
+              <h4>8. Nilai akademik topik ini dalam mata kuliah Etika Budaya</h4>
+              <p>
+                Dari sudut pandang akademik, topik ini kuat karena mempertemukan teori dengan praktik secara konkret.
+                Etika budaya sering tampak abstrak bila hanya dibahas dalam konsep. Namun, lewat kasus pizza online,
+                konsep seperti kejujuran, tanggung jawab, manfaat bersama, loyalitas, dan kepantasan dapat dilihat secara nyata.
+              </p>
+              <p>
+                Penelitian tidak berhenti pada statistik, tetapi melangkah ke wilayah makna sosial dan moral:
+                bagaimana kepuasan dibaca, bagaimana “swing consumers” dipahami, bagaimana kecepatan pengiriman menjadi isu etis,
+                dan bagaimana integritas visual diuji. Di sinilah kualitas etika budaya: bukan hanya mendeskripsikan gejala,
+                tetapi menjelaskan mengapa gejala itu penting bagi kehidupan bersama, serta tanggung jawab moral yang muncul darinya.
+              </p>
+            </section>
+
+            <section class="detail-section anchor" id="bagian9">
+              <h4>9. Kesimpulan koneksi relevansinya</h4>
+              <p>
+                Topik “Ekspektasi vs Realita Pengalaman Memesan Pizza Online di Era Digital” relevan dengan Etika Budaya karena menunjukkan bahwa
+                transaksi digital adalah ruang tempat nilai moral diuji secara langsung. Pembahasan ini tidak hanya menyentuh kepuasan, tetapi juga
+                kejujuran, tanggung jawab, keadilan dalam layanan, dampak promosi visual, dan konsekuensi sosial dari ketidaksesuaian antara janji dan kenyataan.
+              </p>
+              <p>
+                Dengan kata lain, topik ini adalah studi tentang bagaimana budaya digital membentuk harapan manusia, lalu bagaimana etika bisnis menentukan
+                apakah harapan itu dipenuhi secara layak atau dikhianati. Karena itu, laporan layak dibaca bukan hanya sebagai penelitian konsumen,
+                tetapi juga sebagai kajian etika budaya yang relevan, aktual, dan bermakna.
+              </p>
+            </section>
+
+            <div class="btn-row" style="margin-top: 6px;">
+              <a class="btn btn-primary" href="tugas-kelompok.html">Lihat Tugas Kelompok →</a>
+              <a class="btn btn-ghost" href="web-blog-utama.html">Web Blog Utama →</a>
+              <a class="btn btn-ghost" href="#detail-relevansi">Kembali ke Atas ↑</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>Relevansi Topik · Etika Budaya</div>
+      <div><a href="index.html">Beranda</a></div>
+    </div>
+  </footer>
+</body>
+</html>
+

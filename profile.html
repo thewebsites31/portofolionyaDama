@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get to Know the Writer</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="theme.css" />
+  <style>
+    /* Foto profil (tetap satu tema) */
+    .writer-photo{
+      padding: 0;
+      overflow: hidden;
+      border-radius: 14px;
+    }
+    .writer-photo .img-wrap{
+      position: relative;
+      height: 100%;
+      min-height: 260px;
+      background: #000;
+    }
+    .writer-photo img{
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 70%;
+      display: block;
+      filter: saturate(1.05) contrast(1.05);
+      transform: scale(1.02);
+    }
+    .writer-photo .overlay{
+      position: absolute;
+      inset: auto 0 0 0;
+      padding: 16px 16px 14px;
+      background: linear-gradient(to top, rgba(26,26,46,0.80), rgba(26,26,46,0.0));
+      color: #fff;
+    }
+    .writer-photo .kicker{
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      opacity: 0.85;
+      margin: 0;
+    }
+    .writer-photo .title-mini{
+      margin: 8px 0 0;
+      font-family: "Syne", sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      font-size: 14px;
+    }
+    .writer-photo .chips{
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .writer-photo .chip{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.25);
+      background: rgba(255,255,255,0.10);
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.92);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+<body class="accent-teal">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-title">Portofolio</span>
+        <span class="brand-sub">Etika Budaya</span>
+      </a>
+      <nav class="nav">
+        <a href="mata-kuliah.html">Etika Budaya</a>
+        <a href="materi.html">Pembahasan Materi</a>
+        <a href="relevansi.html">Relevansi</a>
+        <a href="web-blog-utama.html">Blog Utama</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="kicker">01 — Tentang Penulis</p>
+      <h1 class="title">Get to Know <em>the Writer</em></h1>
+      <p class="subtitle">
+        Halaman ini memperkenalkan penulis portofolio, latar minat, serta alasan memilih topik Etika Budaya sebagai tema utama.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="index.html">← Kembali ke Beranda</a>
+        <a class="btn btn-ghost" href="materi.html">Lihat Pembahasan Materi →</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="content">
+    <div class="grid">
+      <article class="card span-6 writer-photo">
+        <div class="img-wrap">
+          <img src="assets/foto-profile.jpg" alt="Foto profil penulis" />
+          <div class="overlay">
+            <p class="kicker">Get to Know the Writer</p>
+            <p class="title-mini">Pradita University · Culinary Arts</p>
+            <div class="chips">
+              <span class="chip">Etika Budaya</span>
+              <span class="chip">2025/2026</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card span-6">
+        <h3>Identitas Singkat</h3>
+        <p><strong>Nama:</strong> Muhamad Dama Abitzar Apriliansyah</p>
+        <p><strong>NIM:</strong> 2400101090</p>
+        <p><strong>Program studi:</strong> Culinary Arts</p>
+        <p><strong>Semester:</strong> Genap 2025/2026</p>
+      </article>
+
+      <article class="card">
+        <h3>Minat & Fokus</h3>
+        <p>
+          Saya memiliki ketertarikan pada cara nilai-nilai sosial dan budaya memengaruhi keputusan sehari-hari: bagaimana orang berkomunikasi,
+          bagaimana norma terbentuk, serta bagaimana teknologi mempercepat perubahan pola pikir dan perilaku.
+        </p>
+        <p>
+          Mata kuliah Etika Budaya membantu saya merapikan cara berpikir: tidak hanya “apa yang benar”, tetapi juga
+          <em>mengapa</em> sesuatu dianggap benar/layak dalam konteks budaya tertentu.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Alasan Membuat Portofolio Ini</h3>
+        <p>
+          Portofolio ini dibuat untuk merangkum proses belajar selama perkuliahan Etika Budaya, sekaligus menjadi ruang untuk latihan menulis
+          reflektif. Tujuannya bukan sekadar menampilkan hasil tugas, tetapi menunjukkan cara saya memahami materi, menautkannya ke isu nyata,
+          dan menarik kesimpulan yang bisa dipertanggungjawabkan.
+        </p>
+        <p>
+          Saya juga ingin agar isi portofolio mudah dinavigasi: ada pengantar mata kuliah, ringkasan 6 topik materi, serta halaman relevansi
+          yang menjelaskan hubungan antara tugas dan capaian pembelajaran.
+        </p>
+      </article>
+
+      <!-- Bagian "Prinsip Menulis di Portofolio" dan "Kontak" dihapus sesuai permintaan -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>Get to Know the Writer · Portofolio Etika Budaya</div>
+      <div><a href="index.html">Beranda</a></div>
+    </div>
+  </footer>
+</body>
+</html>
+
